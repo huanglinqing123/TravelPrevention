@@ -22,7 +22,7 @@
 <img src="image/travel_policy.png" width="32%" />
 
 ## 注意
-- 单独运行module_risk_level、module_test_agency与module_travel_policy模块时，需要依赖module_city模块。 模块才可以完整运行，此项目中仅定义了isModule一个变量，若需组件完整运行可定义多个变量，module_risk_level为applciation的时候将module_city设置为library即可。<br>
+- 单独运行module_risk_level、module_test_agency与module_travel_policy模块时，需要依赖module_city模块才可以完整运行，此项目中仅定义了isModule一个变量，若需组件完整运行可定义多个变量，module_risk_level为applciation的时候将module_city设置为library即可。<br>
 
 - 请务必自行申请API接口并将KEY填入，否则程序将抛出异常等问题，若你由于若干种原因无法成功申请，可关注我微信公众号 “Android技术圈”，回复 “key”关键字获取可测试的key。<br>
 
