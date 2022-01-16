@@ -1,0 +1,25 @@
+<!--
+  ~ /*
+  ~  * Copyright (C)  HuangLinqing, TravelPrevention Open Source Project
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License");
+  ~  * you may not use this file except in compliance with the License.
+  ~  * You may obtain a copy of the License at
+  ~  *
+  ~  *      http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software
+  ~  * distributed under the License is distributed on an "AS IS" BASIS,
+  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  * See the License for the specific language governing permissions and
+  ~  * limitations under the License.
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">出行防疫</string>
+    <string name="main_string_head">说明：聚合数据API结果来自当地政府公开、卫健委等部门发布的消息，更新同步可能有延迟,具体以实际为准。</string>
+    <string name="menu_one">查询核酸检测机构</string>
+    <string name="menu_two">查询风险等级地区</string>
+    <string name="menu_three">查询出行政策</string>
+</resources>

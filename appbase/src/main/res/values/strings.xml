@@ -1,0 +1,26 @@
+<!--
+  ~ /*
+  ~  * Copyright (C)  HuangLinqing, TravelPrevention Open Source Project
+  ~  *
+  ~  * Licensed under the Apache License, Version 2.0 (the "License");
+  ~  * you may not use this file except in compliance with the License.
+  ~  * You may obtain a copy of the License at
+  ~  *
+  ~  *      http://www.apache.org/licenses/LICENSE-2.0
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software
+  ~  * distributed under the License is distributed on an "AS IS" BASIS,
+  ~  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  * See the License for the specific language governing permissions and
+  ~  * limitations under the License.
+  ~  */
+  -->
+
+<resources>
+    <string name="app_name">TravelPrevention</string>
+    <string name="network_disconnect">网络未连接</string>
+    <string name="server_connection_abnormal">服务器连接异常</string>
+    <string name="request_timed_out">请求超时，请检查网络连接</string>
+    <string name="server_connection_failed">服务器连接失败</string>
+    <string name="null_pointer_exception">空指针异常</string>
+</resources>
