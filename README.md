@@ -1,8 +1,8 @@
 # MVVM开源项目——出行防疫App
 ## 本项目为书籍<<Jetpack应用原理与实战>>第11章实战项目原创
 
-此项目将长期维护，后续所有的新技术、平台适配等都将基于此项目实践，且会开发Jetpack Compose版本。<br>
 出行防疫App是一款MVVM模式的App，采用了组件化、Aroute、协程、flow等技术，适合初学者学习使用。<br>
+此项目将长期维护，后续所有的新技术、平台适配等都将基于此项目实践，且会开发Jetpack Compose版本。<br>
 项目数据基于 "聚合数据"在线API，需申请对应的API，申请成功后将key值替换到appbase下BaseApi中的KEY变量中<br>
 
 ### 模块说明
@@ -28,9 +28,9 @@
 
 - 请务必自行申请API接口并将KEY填入，否则程序将抛出异常等问题，若你由于若干种原因无法成功申请，可关注我微信公众号 “Android技术圈”，回复 “key”关键字获取可测试的key。<br>
 
-<img src="image/gzh.png" width="32%" />
+<img src="image/gzh.jpg" width="32%" /><br>
 
-   - 公共KEY，接口每天仅可使用50次，请酌情使用
+  - 公共KEY，接口每天仅可使用50次，请酌情使用
 
 
 # License
