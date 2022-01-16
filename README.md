@@ -1,11 +1,9 @@
 # MVVM开源项目——出行防疫App
 ## 本项目为书籍<<Jetpack应用原理与实战>>第11章实战项目原创
 
-#### 此项目将长期维护，后续所有的新技术、平台适配等都将基于此项目实践，且会开发Jetpack Compose版本。
-
-出行防疫App是一款MVVM模式的App，采用了组件化、Aroute、协程、flow等技术，适合初学者学习使用。<br><br>
-项目数据基于 "聚合数据"在线API，需申请对应的API，申请成功后将key值替换到appbase下BaseApi中的KEY变量中
-
+此项目将长期维护，后续所有的新技术、平台适配等都将基于此项目实践，且会开发Jetpack Compose版本。<br>
+出行防疫App是一款MVVM模式的App，采用了组件化、Aroute、协程、flow等技术，适合初学者学习使用。<br>
+项目数据基于 "聚合数据"在线API，需申请对应的API，申请成功后将key值替换到appbase下BaseApi中的KEY变量中<br>
 
 ### 模块说明
 - app 入口模块<br>
@@ -21,19 +19,18 @@
 
 <img src="image/risk_level.png" width="32%" />
 
-<img src="image/travel_policy.jpeg" width="32%" />
+<img src="image/travel_policy.png" width="32%" />
 
 ## 注意
-- 单独运行module_risk_level、module_test_agency与module_travel_policy模块时，需要依赖module_city<br><br>
+- 单独运行module_risk_level、module_test_agency与module_travel_policy模块时，需要依赖module_city模块。<br>
 
-- 模块才可以完整运行，此项目中仅定义了isModule一个变量，若需组件完整运行可定义多个变量，module_risk_level为applciation的时候将module_city设置为library即可。<br><br>
+- 模块才可以完整运行，此项目中仅定义了isModule一个变量，若需组件完整运行可定义多个变量，module_risk_level为applciation的时候将module_city设置为library即可。<br>
 
-- 请务必自行申请API接口并将KEY填入，否则程序将抛出异常等问题，若你由于若干种原因无法成功申请，可关注我微信公众号 “Android技术圈”，回复 “key”关键字获取可测试的key
+- 请务必自行申请API接口并将KEY填入，否则程序将抛出异常等问题，若你由于若干种原因无法成功申请，可关注我微信公众号 “Android技术圈”，回复 “key”关键字获取可测试的key。<br>
 
-![](imge/gzh.jpg)
+<img src="image/gzh.png" width="32%" />
 
-  - 公共KEY，接口每天仅可使用50次，请酌情使用
-  
+   - 公共KEY，接口每天仅可使用50次，请酌情使用
 
 
 # License
