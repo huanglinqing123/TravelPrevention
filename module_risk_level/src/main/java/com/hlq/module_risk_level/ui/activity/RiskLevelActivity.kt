@@ -29,7 +29,7 @@ import com.hlq.appbase.utils.DialogLoadingUtils
 import com.hlq.module_risk_level.bean.enum.DataTypeEnum
 import com.hlq.module_risk_level.bean.reqbean.RiskLevelDetailBean
 import com.hlq.module_risk_level.databinding.ActivityRiskLevelBinding
-import com.hlq.module_risk_level.ui.adapter.RiskLevelMessageAdpter
+import com.hlq.module_risk_level.ui.adapter.RiskLevelMessageAdapter
 import com.hlq.module_risk_level.viewmodel.RiskLevelViewModel
 
 /**
@@ -86,7 +86,7 @@ class RiskLevelActivity : BaseActivity<ActivityRiskLevelBinding>() {
                     it.result?.middle_list?.let { middle ->
                         list.addAll(middle)
                     }
-                    val riskLevelAdapter = RiskLevelMessageAdpter(list)
+                    val riskLevelAdapter = RiskLevelMessageAdapter(list)
                     mViewBinding.rvData.adapter = riskLevelAdapter
                 }
             }

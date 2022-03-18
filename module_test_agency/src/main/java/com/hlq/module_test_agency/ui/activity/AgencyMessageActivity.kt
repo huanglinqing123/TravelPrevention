@@ -20,7 +20,6 @@ package com.hlq.module_test_agency.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.alibaba.android.arouter.facade.annotation.Route
@@ -33,7 +32,7 @@ import com.hlq.appbase.ui.BaseActivity
 import com.hlq.appbase.utils.DialogLoadingUtils
 import com.hlq.module_test_agency.R
 import com.hlq.module_test_agency.databinding.ActivityAgencyMessageBinding
-import com.hlq.module_test_agency.ui.adapter.AgencyMessageAdpter
+import com.hlq.module_test_agency.ui.adapter.AgencyMessageAdapter
 import com.hlq.module_test_agency.viewmodel.AgencyViewModel
 
 
@@ -86,21 +85,21 @@ class AgencyMessageActivity : BaseActivity<ActivityAgencyMessageBinding>() {
      */
     private fun loadData(cityId: String) {
         DialogLoadingUtils.showLoading(this, getString(R.string.wait_please))
-        agencyViewModel.loadTestAgencyMessage(cityId).observe(this, {
+        agencyViewModel.loadTestAgencyMessage(cityId).observe(this) {
             DialogLoadingUtils.cancel()
             it?.let {
                 if (it.error_code == 0) {
                     //请求成功
                     it.result?.data?.let { data ->
-                        val cityDataAdpter = AgencyMessageAdpter(data,
+                        val agencyMessageAdpter = AgencyMessageAdapter(data,
                             callback = { position, data ->
                                 //以后可以在这里做扩展 如拨打电话、导航等
                             })
-                        mViewBinding.rvData.adapter = cityDataAdpter
+                        mViewBinding.rvData.adapter = agencyMessageAdpter
                     }
                 }
             }
-        })
+        }
     }
 
 

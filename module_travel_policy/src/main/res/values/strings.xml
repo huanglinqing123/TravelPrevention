@@ -18,7 +18,7 @@
 
 <resources>
     <string name="app_name">module_travel_policy</string>
-    <string name="travel_policy">出行政策</string>
+    <string name="travel_policy">健康出行政策</string>
     <string name="select_from_city">选择出发地</string>
     <string name="select_to_city">选择目的地</string>
 </resources>

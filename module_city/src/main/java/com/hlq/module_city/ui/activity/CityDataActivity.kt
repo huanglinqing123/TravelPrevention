@@ -32,7 +32,7 @@ import com.hlq.appbase.utils.DialogLoadingUtils
 import com.hlq.module_city.R
 import com.hlq.module_city.bean.reqbean.CityDataReqData
 import com.hlq.module_city.databinding.ActivityCityDataBinding
-import com.hlq.module_city.ui.adapter.CityDataAdpter
+import com.hlq.module_city.ui.adapter.CityDataAdapter
 import com.hlq.module_city.ui.view.IndexView
 import com.hlq.module_city.viewmodel.CityDataViewModel
 
@@ -123,7 +123,7 @@ class CityDataActivity : BaseActivity<ActivityCityDataBinding>() {
                             }
                         }
                         cityList.sort()
-                        val cityDataAdpter = CityDataAdpter(cityList,
+                        val cityDataAdpter = CityDataAdapter(cityList,
                             callback = { position, data ->
                                 //选择数据回调
                                 val intent = Intent()

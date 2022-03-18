@@ -34,7 +34,7 @@ import com.hlq.module_risk_level.databinding.ItemTitleBinding
  * @公众号：Android 技术圈
  * @desc：显示核酸检测机构信息
  */
-class RiskLevelMessageAdpter(
+class RiskLevelMessageAdapter(
     var data: List<RiskLevelDetailBean>
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
