@@ -22,4 +22,5 @@
     <string name="menu_one">查询核酸检测机构</string>
     <string name="menu_two">查询风险等级地区</string>
     <string name="menu_three">查询健康出行政策</string>
+    <string name="enter_key_please">请填入KEY</string>
 </resources>
