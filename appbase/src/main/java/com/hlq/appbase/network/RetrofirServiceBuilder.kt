@@ -73,23 +73,22 @@ object RetrofirServiceBuilder {
             return httpHashMap[clazz.name] as T
         }
 
-        //添加日志拦截器
-        val interceptor = HttpLoggingInterceptor(object : HttpLoggingInterceptor.Logger {
-            override fun log(message: String) {
-                HttpLoggingInterceptor.Logger.DEFAULT.log(message)
-            }
-        })
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
-        val builder = OkHttpClient.Builder()
-            .addInterceptor(interceptor)
+       
 
         val retrofit: Retrofit = Retrofit.Builder()
             .baseUrl(baseApi)
-            .client(builder.build())
+            .client(okClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         val service = retrofit.create(clazz)
         httpHashMap[clazz.name] = service as Any
         return retrofit.create(clazz)
+    }
+    
+     @JvmStatic
+    val okClient by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {
+        OkHttpClient.Builder()
+            .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
+            .build()
     }
 }
